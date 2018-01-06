@@ -1,0 +1,133 @@
+<div class="container-fluid prodct_wrap">
+    
+        <div class="col-12 zerocol">
+            <div class="radbtns_wrapper">
+                 <form class="filter_form src-filter">
+                    <form role="form">
+                        <fieldset>
+                            <div class="radio radio-info radio-inline">
+                                <input type="radio" id="inlineRadio1" value="General Service &amp; Repair" name="radioInline" [(ngModel)]="radioInline" checked="">
+                                <label for="inlineRadio1"> General Service &amp; Repair </label>
+                            </div>
+                            <div class="radio radio-inline">
+                                <input type="radio" id="inlineRadio2" value="Detailing" name="radioInline" [(ngModel)]="radioInline">
+                                <label for="inlineRadio2"> Detailing </label>
+                            </div>
+                            <div class="radio radio-inline">
+                                <input type="radio" id="inlineRadio3" value="Tyres &amp; Batteries" name="radioInline" [(ngModel)]="radioInline">
+                                <label for="inlineRadio3"> Tyres &amp; Batteries </label>
+                            </div>
+                            <div class="radio radio-inline">
+                                <input type="radio" id="inlineRadio4" value="Denting &amp; painting" name="radioInline" [(ngModel)]="radioInline">
+                                
+                                <label for="inlineRadio4"> Denting &amp; painting </label>
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" (click)="openDropDownList()" class="dropbtn">Other Items 
+                                  <span class="downarrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                </button>
+                                <div id="myDropdown" class="dropdown-content" *ngIf="dropOpen">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                 </form>
+            </div>
+        </div>
+  
+  </div>
+  
+  <!--products data-->
+  
+  <div class="container-fluid gray-bg">
+    <div class="row">
+    <div class="col-12">
+  
+      <div class="col-12 col-md-8">
+        <div class="matched_data">
+            <div class="nice-title">301 Matches found for: Autorox garages in <span>Hyderabad</span></div>
+  
+            <select class="form-control sortselecter"  name="sortby">
+              <option value="">Default Sorting</option>
+              <option *ngFor="let f of filterList" value="{{f.value}}">{{f.text}}</option>
+            </select>
+            <div class="clr"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="row">
+        
+            <div class="col-12 col-md-9 col-sm-9">
+               <!--inner product data-->
+               <div class="row inrpro_data" *ngFor="let p of ProductList">
+                    
+                            <div class="col-md-3">
+                                  <img [src]="p.gricpath" width="100%">
+                                  <p class="tp_cities">Top Cities : 
+                                      <span><i class="fa fa-car" aria-hidden="true"></i></span>
+                                      <span><i class="fa fa-wifi" aria-hidden="true"></i></span>
+                                      <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                  </p>
+                            </div>
+                  
+                            <div class="col-12 col-md-6">
+                                <h3 class="prd_title"><a href="">{{p.prodTitle}}</a></h3>
+                                <p class="grg-brf">{{p.proddesc}} <span><a href="#"> Read More</a></span></p>
+                                <ul class="carz_list">
+                                    <li *ngFor="let c of carsList"><a href="">{{c}}</a></li>
+                                    <span><a href="#">View all 16 Services</a></span>
+                                </ul>
+
+                                <h4 class="srv_tags">{{p.prodSubTitle}}</h4>
+                                <ul class="service_lst">
+                                    <li *ngFor="let s of serviceList"><a href=""><span><i class="fa fa-angle-right"></i></span>{{s}}</a></li>
+                                </ul>
+                            </div>
+                  
+                            <div class="col-12 col-md-3 add_bor">
+                                <div class="grg-star">
+                                    <span class="star">
+                                        <i class="fa fa-star orange-color"></i>
+                                        <i class="fa fa-star orange-color"></i>
+                                        <i class="fa fa-star orange-color"></i>
+                                        <i class="fa fa-star orange-color"></i>
+                                        <i class="fa fa-star-o orange-color"></i>
+                                    </span>
+                                    <span class="ful-rat"> 4.5 / 5 (10 )</span>
+                                </div>
+
+                                <p class="prdo_feed"><span><i class="fa fa-car" aria-hidden="true"></i></span>{{p.prodFeedback}}</p>
+                                <p class="prdo_feed"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>{{p.prodLocation}} <a href="">Get Directions</a></p>
+                                <p class="prdo_feed"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>{{p.prodTiming}}</p>
+                                <p class="prdo_feed"><a href="">Show All Times</a></p>
+
+                                <div class="btn sc_item_button grg-btn app">Book Appointment</div>
+                                <div class="btn sc_item_button grg-btn">Call Now</div>
+                            </div>
+                       
+
+               </div>
+     
+  <!--inner product data-->
+            </div>
+
+
+            <div class="col-12 col-md-4 col-sm-4">
+                <div class="row inrpro_data">
+                    
+                </div>
+            </div>
+        </div>
+    
+
+
+  </div>
+  

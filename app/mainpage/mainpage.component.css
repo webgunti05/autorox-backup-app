@@ -1,0 +1,94 @@
+#slider {
+    width: 100%;
+    margin:75px auto 0px auto;
+    padding: 0;
+    position: relative;
+}
+
+.items {
+    width: 100%; max-height: 600px;
+    
+}
+
+#left, #right { 
+    margin: 30px;
+    -webkit-filter: brightness(0) invert(1); -moz-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+    outline: none!important; cursor: pointer;
+}
+.slide_bgs{ position: relative;}
+.myForm{ position: absolute; z-index: 500; top: 0; width: 70%; top: 38%; left: 0; right: 0; display: block;
+    margin:0px auto;
+}
+.slidecont{position: relative;}
+.loc_inp{ width: 34%; float: left; margin-right: 1%; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+    border-radius: 2px; border: none; height: 50px;
+}
+.plc_inp{ width: 55%; float: left; margin-right: 1%; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+    border-radius: 2px; border: none; height: 50px;
+}
+.nomar{ margin:0px!important;}
+.srch_btn{ background-color: #1ebef0; height: 50px; width: 80px; outline: none;}
+.intro-title{ text-align: left; color: #fff; font-size: 30px; font-weight: 600;}
+.sub-title{ color: #fff; font-size: 20px; text-align: left;}
+
+/*breadcrumb css*/
+.blue_breadcrumb{ background: #00afef; padding: 10px 0px; margin: 0px;}
+.bread_bg{ width: 20%; float: left;}
+.bread_bg img{ width: 100%; max-width: 60px; display: block; margin: 0px auto; padding: 10px 0px;}
+.brd_title{ font-size: 14px; color:#fff; text-align:center; padding-bottom: 10px;}
+.app_data{ padding: 65px 0px;}
+.app_disc h2 { font-family: 'Open Sans',sans-serif; font-weight: 400; line-height: initial;}
+.app_disc ul { margin: 0; padding: 0;}
+.app_disc ul li { color: #797985; list-style: none; font-size: 16px;
+    font-weight: 400; padding: 8px 0;
+}
+.app_disc ul li .fa-chevron-right {color: #14bef0; margin-right: 5px;}
+.sc_item_button { line-height: 38px; width: auto; padding: 0 25px; font-size: 16px;
+    color: #fff; background-color: #00aff0; border: #00aff0; cursor: pointer;
+    text-align: center; margin-top: 25px; border-radius: 2%;
+}
+.user-app {background: #f1f0f6;}
+
+.hm-of h2 { text-align: center; font-size: 30px; color: #3f3f3f; font-weight: 700; padding: 0 0 50px;}
+.of-disc { padding: 10px 0; display: inline-table;}
+.of-disc p { color: #6c6c79; font-size: 17px; font-family: 'Open Sans',sans-serif; font-weight: 600;}
+.of-img { margin: 0 auto; text-align: center;}
+.text-center { text-align: center !important;}
+.app_img img{ width: 100%;}
+
+
+.leftRs {position: absolute; margin: auto; top: 0; bottom: 0; width: 50px; height: 50px;
+     border-radius: 999px; left: 0; cursor: pointer; outline: none; 
+     background-color: #fff; border: none; color:#00afef;  box-shadow:0px 0px 2px #000;
+}
+
+.rightRs { position: absolute; margin: auto; top: 0; bottom: 0; width: 50px; height: 50px; border-radius: 999px; right: 0;
+    cursor: pointer; outline: none; color:#00afef;  background-color: #fff; border: none;  box-shadow:0px 0px 2px #000;
+}
+
+.ngxcarouselPointDefault{ display: none!important;}
+.tilebg{ width: 100%;}
+.carous_wrap{ padding-bottom: 65px;}
+.owlcardata{ padding: 0 10px; margin-bottom: 20px;}
+.gar-tittle{ font-size: 16px; font-weight: 600; color: #282828; margin-bottom: 10px; text-align: center; padding: 15px 0px;}
+.loc{ font-size: 12px;}
+.phn{ font-size: 12px; float: right; padding-top: 5px;}
+i.fa.fa-star.orange-color { color: #ffbe00;}
+.star .fa-star-o { color: #ffbe00 !important;}
+.star{ display: block;  max-width: 145px; margin: 10px auto;}
+.rat{ font-size: 12px; text-align: center;}
+.hgt{ display: block; height: 10px;}
+.rathdn{ margin-right: 10px;}
+
+
+@media (min-width: 200px) and ( max-width: 1142px){
+    .myForm{ display: none;}
+   
+}
+
+@media only screen and (max-width: 660px){
+    .bread_bg{ width: 100%; float: none; margin: 10px auto; display: block;}
+    .app_disc h2 b{ display: block;}
+    
+}

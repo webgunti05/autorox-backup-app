@@ -1,0 +1,175 @@
+{
+    "postItems" : [
+        {
+            "postbg" : "http://www.autorox.co/wp-content/uploads/2014/09/22.jpg",
+            "title" : "Autorox",
+            "date" : "December 25, 2017"
+        },
+        {
+            "postbg" : "http://www.autorox.co/wp-content/uploads/2014/09/25.jpg",
+            "title" : "Autorox",
+            "date" : "December 25, 2017"
+        },
+        {
+            "postbg" : "http://www.autorox.co/wp-content/uploads/2014/09/22.jpg",
+            "title" : "Autorox",
+            "date" : "December 25, 2017"
+        }
+    ],
+
+    "postBread" : [
+        {
+            "itemBg" : "assets/images/value_icon.png",
+            "itemTit" : "Trust Worthy"
+        },
+        {
+            "itemBg" : "assets/images/secure_icon.png",
+            "itemTit" : "Secure"
+        },
+        {
+            "itemBg" : "assets/images/quality_icon.png",
+            "itemTit" : "Quality"
+        },
+        {
+            "itemBg" : "assets/images/exp_icon.png",
+            "itemTit" : "Experience"
+        },
+        {
+            "itemBg" : "assets/images/value_icon.png",
+            "itemTit" : "Value of Money"
+        }
+    ],
+
+    "carouselTileItems" : [
+        {   
+            "tilepath" : "assets/images/01.jpg",
+            "tilehdng" : "Acura Rsx",
+            "tileloc" : "Madhapur",
+            "tilephone" : "+91 00000-00000",
+            "tielrating" : "70 Ratings"
+        },
+        {   
+            "tilepath" : "assets/images/01.jpg",
+            "tilehdng" : "Acura Rsx",
+            "tileloc" : "Madhapur",
+            "tilephone" : "+91 00000-00000",
+            "tielrating" : "70 Ratings"
+        },
+        {   
+            "tilepath" : "assets/images/01.jpg",
+            "tilehdng" : "Acura Rsx",
+            "tileloc" : "Madhapur",
+            "tilephone" : "+91 00000-00000",
+            "tielrating" : "70 Ratings"
+        },
+        {   
+            "tilepath" : "assets/images/01.jpg",
+            "tilehdng" : "Acura Rsx",
+            "tileloc" : "Madhapur",
+            "tilephone" : "+91 00000-00000",
+            "tielrating" : "70 Ratings"
+        },
+        {   
+            "tilepath" : "assets/images/01.jpg",
+            "tilehdng" : "Acura Rsx",
+            "tileloc" : "Madhapur",
+            "tilephone" : "+91 00000-00000",
+            "tielrating" : "70 Ratings"
+        },
+        {   
+            "tilepath" : "assets/images/01.jpg",
+            "tilehdng" : "Acura Rsx",
+            "tileloc" : "Madhapur",
+            "tilephone" : "+91 00000-00000",
+            "tielrating" : "70 Ratings"
+        },
+        {   
+            "tilepath" : "assets/images/01.jpg",
+            "tilehdng" : "Acura Rsx",
+            "tileloc" : "Madhapur",
+            "tilephone" : "+91 00000-00000",
+            "tielrating" : "70 Ratings"
+        },
+        {   
+            "tilepath" : "assets/images/01.jpg",
+            "tilehdng" : "Acura Rsx",
+            "tileloc" : "Madhapur",
+            "tilephone" : "+91 00000-00000",
+            "tielrating" : "70 Ratings"
+        },
+        {   
+            "tilepath" : "assets/images/01.jpg",
+            "tilehdng" : "Acura Rsx",
+            "tileloc" : "Madhapur",
+            "tilephone" : "+91 00000-00000",
+            "tielrating" : "70 Ratings"
+        },
+        {   
+            "tilepath" : "assets/images/01.jpg",
+            "tilehdng" : "Acura Rsx",
+            "tileloc" : "Madhapur",
+            "tilephone" : "+91 00000-00000",
+            "tielrating" : "70 Ratings"
+        },
+        {   
+            "tilepath" : "assets/images/01.jpg",
+            "tilehdng" : "Acura Rsx",
+            "tileloc" : "Madhapur",
+            "tilephone" : "+91 00000-00000",
+            "tielrating" : "70 Ratings"
+        },
+        {   
+            "tilepath" : "assets/images/01.jpg",
+            "tilehdng" : "Acura Rsx",
+            "tileloc" : "Madhapur",
+            "tilephone" : "+91 00000-00000",
+            "tielrating" : "70 Ratings"
+        }
+    ],
+
+    "ProductList" : [
+        { 
+        "gricpath" : "assets/images/grg_pic.png",
+        "prodTitle" : "Deccan Motor Cycle And Scooter Garage",
+        "proddesc" : "An authorised sales and service dealership, Aakash Motors in Hyderabad has been in the business ever since the year 2006. In a short span of time, ",
+         "prodSubTitle" : "Services",
+        "prodRating" : "4.5/5 (10)",
+         "prodFeedback" : "120 Feedback for Users",
+        "prodLocation" : "Madhapur, Hyderabad",
+         "prodTiming" : "9:00 AM - 9:30 PM"
+        },
+        { 
+        "gricpath" : "assets/images/grg_pic.png",
+        "prodTitle" : "Deccan Motor Cycle And Scooter Garage",
+        "proddesc" : "An authorised sales and service dealership, Aakash Motors in Hyderabad has been in the business ever since the year 2006. In a short span of time, ",
+         "prodSubTitle" : "Services",
+        "prodRating" : "4.5/5 (10)",
+         "prodFeedback" : "120 Feedback for Users",
+        "prodLocation" : "Madhapur, Hyderabad",
+         "prodTiming" : "9:00 AM - 9:30 PM"
+        },
+        { 
+        "gricpath" : "assets/images/grg_pic.png",
+        "prodTitle" : "Deccan Motor Cycle And Scooter Garage",
+        "proddesc" : "An authorised sales and service dealership, Aakash Motors in Hyderabad has been in the business ever since the year 2006. In a short span of time, ",
+         "prodSubTitle" : "Services",
+        "prodRating" : "4.5/5 (10)",
+         "prodFeedback" : "120 Feedback for Users",
+        "prodLocation" : "Madhapur, Hyderabad",
+         "prodTiming" : "9:00 AM - 9:30 PM"
+        },
+        { 
+        "gricpath" : "assets/images/grg_pic.png",
+        "prodTitle" : "Deccan Motor Cycle And Scooter Garage",
+        "proddesc" : "An authorised sales and service dealership, Aakash Motors in Hyderabad has been in the business ever since the year 2006. In a short span of time, ",
+         "prodSubTitle" : "Services",
+        "prodRating" : "4.5/5 (10)",
+         "prodFeedback" : "120 Feedback for Users",
+        "prodLocation" : "Madhapur, Hyderabad",
+         "prodTiming" : "9:00 AM - 9:30 PM"
+        }
+    ]
+
+    
+}
+

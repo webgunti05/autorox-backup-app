@@ -1,0 +1,180 @@
+<div id="slider">
+        <div
+          ng2-carouselamos
+          class="slides-wrapper slidecont"
+          [items]="items"
+          [width]="auto"
+          [$prev]="prev"
+          [$next]="next"
+          [$item]="item"
+        >
+        
+        </div>
+      
+  
+      <ng-template #prev>
+        <img src="assets/images/left-arrow.png" id="left" />
+      </ng-template>
+      <ng-template #next>
+        <img src="assets/images/right-arrow.png" id="right" />
+      </ng-template>
+      <ng-template #item let-item let-i="index">
+  
+          <div class="items slide_bgs">
+            <img src="{{ item.name }}">
+            
+          </div>
+
+          
+          
+      </ng-template>
+
+        <div class="container">
+            <form class="myForm">
+              <h1 class="intro-title">LIFE IS TO SHORT TO SPEND TIME ON YOUR CAR SERVICES!</h1>
+              <p class="sub-title">Get over 100+ car repair services near you</p>
+                <div class="form-group nomar">
+                    <input type="text" name="Location" class="form-control loc_inp" placeholder="Location Name (GL Suggest )">
+                </div>
+
+                <div class="form-group nomar">
+                    <input type="text" name="Location" class="form-control plc_inp" placeholder="Workshop name / Workshop Location / Services">
+                </div>
+                
+
+                <button type="submit" class="btn btn-primary srch_btn" (click)="goToSearch()" >
+                  <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+                
+            </form>
+        </div>
+
+      </div>
+
+
+      <!--slider ends-->
+
+      <div class="container-fluid blue_breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="bread_bg" *ngFor="let b of postBread">
+                  <span><img [src]="b.itemBg"></span>
+                  <h4 class="brd_title">{{b.itemTit}}</h4>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+      <!--app image-->
+
+<div class="container-fluid app_data">
+  <div class="container">
+
+			<div class="row">
+				<div class="col-12 col-md-6 app_disc">
+					<h2>Instant appointment with garages.<b>Guaranteed.</b></h2>
+					<ul>
+						<li><i class="fa fa-chevron-right" aria-hidden="true"></i><b>100,000</b> Verified garages</li>
+						<li><i class="fa fa-chevron-right" aria-hidden="true"></i><b>3M+</b> Users recommendations</li>
+						<li><i class="fa fa-chevron-right" aria-hidden="true"></i><b>25M </b>Users/year</li>
+					</ul>
+					<div class="btn sc_item_button">Download App</div>
+        </div>
+        
+        <div class="col-12 col-md-6">
+					<div class="app_img">
+						<img src="assets/images/app.png" alt="">
+					</div>
+				</div>
+			</div>
+
+	</div>
+</div>
+
+
+<!--usesr app-->
+<div class="container-fluid block app-det user-app app_data">
+	<div class="container">
+
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="app_img">
+						<img src="assets/images/app.png" alt="">
+					</div>
+        </div>
+        
+
+				<div class="col-12 col-md-6 app_disc">
+					<h2>Skip the waiting room.<b>Consult online.</b></h2>
+					<ul>
+						<li><i class="fa fa-chevron-right" aria-hidden="true"></i><b>100,000</b> Verified garages</li>
+						<li><i class="fa fa-chevron-right" aria-hidden="true"></i><b>3M+</b> Users recommendations</li>
+						<li><i class="fa fa-chevron-right" aria-hidden="true"></i><b>25M </b>Users/year</li>
+					</ul>
+					<div class="btn sc_item_button">Book Appointment</div>
+					<div class="btn sc_item_button">Download App</div>
+				</div>
+			</div>
+
+	</div>
+</div>
+
+
+<!--offer html-->
+<div class="container-fluid block hm-of app_data">
+  <div class="container">
+    <h2>Free Air Condition Check</h2>
+    <div class="row">
+
+      <div class="col-12 col-md-4 of-disc">
+        <div class="text-center">
+          <p>Check out your car at our workshop!</p>
+          <p>Check out your car at our workshop!</p>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-4 of-img"><img src="assets/images/offer.png" alt=""></div>
+      <div class="col-12 col-md-4 of-disc">
+        <div class="text-center">
+          <p>Check out your car at our workshop!</p>
+          <p>Check out your car at our workshop!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--owel carousel-->
+
+<div class="container carous_wrap">
+  <ngx-carousel
+      [inputs]="carouselTile"
+      (carouselLoad)="carouselTileLoad($event)">
+ 
+            <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
+                <!-- <h1>{{Tile + 1}}</h1> -->
+                <img [src]="Tile.tilepath" class="tilebg">
+                <div class="owlcardata">
+                  <h3 class="gar-tittle">{{Tile.tilehdng}}</h3>
+                  <div><span class="loc"><i class="fa fa-map-marker" aria-hidden="true"></i> {{Tile.tileloc}}</span>
+                     <span class="phn"><i class="fa fa-phone" aria-hidden="true"></i> {{Tile.tilephone}}</span>
+                  </div>
+                  <div>
+                     
+                    <span class="star rat">
+                        <span><i class="fa fa-star orange-color"></i></span>
+                        <span><i class="fa fa-star orange-color"></i></span>
+                        <span><i class="fa fa-star orange-color"></i></span>
+                        <span><i class="fa fa-star orange-color"></i></span>
+                        <span><i class="fa fa-star-o orange-color rathdn"></i></span>{{Tile.tielrating}}</span></div>
+                </div>
+                <span class="hgt"></span>
+            </ngx-tile>
+ 
+          <button NgxCarouselPrev class='leftRs'><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+          <button NgxCarouselNext class='rightRs'><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+    </ngx-carousel>
+</div>
+

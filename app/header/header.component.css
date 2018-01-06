@@ -1,0 +1,100 @@
+.header_wrapper{ border-bottom: 1px solid #ddd; padding-left: 0px; position: fixed;
+    top: 0; width: 100%; z-index: 1000; background-color: #fff;
+}
+.header_left{ float: left; max-width: 220px;}
+.autorox_logo{ max-width: 145px; float: left; padding: 24px 0px 0px 20px;}
+.hamburg_menu{ float: left; padding: 25px 20px 25px 20px; border-right:1px solid #ddd; cursor: pointer;}
+
+
+
+.header_right{ float: right; padding-right: 0px;}
+nav{  padding:0px; margin: 0px; float: left;}
+nav ul{ list-style: none; padding:0px; margin: 0px;}
+nav ul li{  float: left; color: #414146; font-size: 14px; position: relative;  cursor: pointer;}
+nav ul li a{ display: block; padding: 25px 20px; color: #414146; text-decoration: none;}
+
+
+
+.auth_wrap{  padding:0px; margin: 20px 0px; float: left;}
+.auth_wrap ul{ list-style: none; padding:0px; margin: 0px;}
+.auth_wrap ul li{  float: left; color: #414146; font-size: 14px;}
+.auth_wrap ul li a{ display: block; padding: 10px 30px; color: #414146; text-decoration: none;}
+.auth_btn{ padding: 10px 20px;  cursor: pointer; border: 1px solid #ddd;}
+.donwnload_btn{ border: 1px solid #ddd; margin-right: 5px;}
+
+
+.hd_btnswrap { list-style: none; margin: 0px; padding: 0px; float: left;}
+.hd_btnswrap li { font-size: 14px; margin: 15px 5px 15px 0px; float: left; position: relative; cursor: pointer;}
+.hdr_buy { background-color: #ffcc29; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+    border-radius: 2px; padding: 10px 15px; color: #fff;
+}
+.hdr_free { background-color: #00b0ef; -webkit-border-radius: 2px; -moz-border-radius: 2px;
+    border-radius: 2px; padding: 10px 15px; color: #fff;
+}
+.hd_downs { padding: 9px 15px 9px 15px; border: 1px solid #ddd; -webkit-border-radius: 2px;
+    -moz-border-radius: 2px; border-radius: 2px; color: #999999;
+}
+.hdr_auths { padding: 9px 15px 9px 15px; border: 1px solid #ddd; -webkit-border-radius: 2px;
+    -moz-border-radius: 2px; border-radius: 2px; color: #999999;
+}
+/*submenu*/
+.submenu{ position:absolute; z-index: 10; list-style: none; background-color: #fff;
+    visibility: hidden; opacity:0; -webkit-opacity:0; -moz-opacity:0;}
+.submenu li{ color: #999; float: none; width: 100%;}
+.submenu li a{ padding: 12px 20px!important; display: block;}
+nav ul li:hover .submenu{ visibility: visible; opacity:1; -webkit-opacity:1; -moz-opacity:1;}
+
+
+/*Collapsible menu css*/
+.colpseMenu{ padding: 30px 50px; margin: 75px 0px -75px 0px; width: 100%; box-sizing: border-box;}
+.spaee_btn{ margin-right: 20px;}
+.colpseMenu ul{ list-style: none;}
+.colpseMenu ul li{ float: left; padding: 20px 30px; font-size: 14px;}
+.colpseMenu ul li a{ color: #999; text-decoration: none;}
+
+/*header right2*/
+.header_right2{ float: right;}
+.header_frm{ float: left; width: 100%; position: absolute; max-width: 680px; display: block;
+    margin:0px auto; left: 0; right: 0; top: 13px;
+}
+.hdrfrm_inp{
+    width: 43%; float: left; margin-right: 1%; border-radius: 2px; border: none; height: 47px;
+    border: 1px solid #ddd; padding: 0 20px; font-size: 13px; color: #999; outline: none;
+}
+.righter_authsbtns{ position: absolute; right: 0;}
+.rsp_searcher{ display: none;}
+.sbtn2{ width: 60px; background-color: #1ebef0!important; border: none!important; height: 46px; outline: none;}
+.sbtn2:focus{ box-shadow: none; outline:none;}
+.mob_frm{ display: none;}
+.btm_menulinks{ margin-top:15px;}
+.colpseMenu ul li{ padding: 12px 20px;}
+
+
+@media (min-width: 200px) and ( max-width: 1142px){
+    .header_right{ display: none;}
+    .header_right2{ position: relative; width: 100%; display: none;}
+    .rsp_searcher{ position: absolute; right: 20px; top: 16px; width: 40px; height: 40px;
+        -webkit-border-radius:2px;  -moz-border-radius:2px;  border-radius:2px; display: block;
+        background-color: #1ebef0; color: #fff; text-align:center; cursor: pointer;
+    }
+    .hdsearch_icon{  vertical-align: middle; position: relative; top: 5px;}
+    .header_frm{ background-color: #fff; max-width: 100%; padding: 20px; box-sizing: border-box; top: 1px; display: block; }
+    .hide_regs{ display: none;}
+
+    .hdrfrm_inp{ float: none; width: 100%; margin: 5px auto; display: block;}
+    .header_frm button{ display: block; width: 100%;  height: 50px; margin: 15px auto;}
+    .mob_frm{ display: block; position: relative; top: 74px;}
+    .colpseMenu{ position: fixed; z-index: 1000; width: 100%; background-color: #fff;
+        margin: 0px 0px 0px 0px;
+    }
+    .hd_btnswrap{ display: block;}
+    
+}
+@media only screen and ( max-width: 1024px){
+   .colpseMenu ul{ display: block; width: 100%;}
+}
+@media only screen and ( max-width: 767px){
+    .colpseMenu ul{ display: block; width: 100%; margin-bottom: 35px;}
+    .colpseMenu ul li{ display: block; float: none; padding: 8px 20px;}
+    .hdr_buy,.hdr_free,.hd_downs { padding: 12px 20px!important;}
+ }

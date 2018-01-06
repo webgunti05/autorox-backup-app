@@ -1,0 +1,139 @@
+<div class="container-fluid footer_wrapper" [style.background-image] = "'url(\'assets/foot_bg.jpg\')'">
+    <div class="footer_overlay">
+        <div class="container">
+
+        
+
+        <div class="row social_iconswrap">
+
+            <div class="col nospace">
+                <div class="fb">
+                    <a href="#">
+                        <p>Facebook</p>
+                        <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                    </a>   
+                </div>  
+            </div>
+
+            <div class="col nospace">
+                <div class="tw">
+                    <a href="#">
+                        <p>Twitter</p>
+                        <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                    </a>   
+                </div>  
+            </div>
+
+            <div class="col nospace">
+                <div class="pin">
+                    <a href="#">
+                        <p>Pinterest</p>
+                        <span><i class="fa fa-pinterest-p" aria-hidden="true"></i></span>
+                    </a>   
+                </div>  
+            </div>
+
+            <div class="col nospace">
+                <div class="drib">
+                    <a href="#">
+                        <p>Dribbble</p>
+                        <span><i class="fa fa-dribbble" aria-hidden="true"></i></span>
+                    </a>   
+                </div>  
+            </div>
+
+            <div class="col nospace">
+                <div class="gp">
+                    <a href="#">
+                        <p>Google Plus</p>
+                        <span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+                    </a>   
+                </div>  
+            </div>
+
+            <div class="col nospace">
+                <div class="bh">
+                    <a href="#">
+                        <p>Behance</p>
+                        <span><i class="fa fa-behance" aria-hidden="true"></i></span>
+                    </a>   
+                </div>  
+            </div>
+
+        </div>
+        <!--social icons wrap ends-->
+
+
+
+        <div class="row btm_links">
+            <div class="col-12 col-md-3">
+                <img [src]="footerLogo" alt="Autoroc logo" title="Autorox logo" width="100%" class="footer_logo">
+                <p> We provide everything you need to build an amazing dealership website developed especially for car
+                     sellers dealers or auto motor retailers.</p>
+                <p> <i class="fa fa-map-marker" aria-hidden="true"></i> 8-2-277/12, Andhra Pradesh Real Estate, Green Valley, Banjara Hills, Hyderabad, Telangana 500873</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> 040 4855 2458</p>
+                <p> <a href="mailto:support@autorox.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> support@autorox.com</a></p>
+            </div>
+
+
+            <div class="col-12 col-md-3">
+                <h3>Usefull Links</h3>
+                <ul class="btmpage_links">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Change Oil and Filter</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Brake Pads Replacement</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Timing Belt Replacement</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Pre-purchase Car Inspection</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Starter Replacement</a></li>
+                    </ul>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <h3>Recent posts</h3>
+                <ul>
+                    <li *ngFor = "let p of postItems" class="posting_item">
+                        <div class="lft_space"><img [src]="p.postbg" class="post_img" width="100%"></div>
+                        <div class="rft_space">
+                                <p>{{p.title}}</p>
+                                <small>{{p.date}}</small>
+                        </div>
+                        
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <h3>Subscribe Our Newsletter</h3>
+                <p>
+                    Keep up on our always evolving products features and technology. Enter your e-mail and subscribe to our newsletter.
+                </p>
+                <form>
+                    <input type="text" name="name" class="subscribe_inp" id="" placeholder="Enter Your Email">
+                    <button type="button" value="Subscribe" class="subscribe_btn">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+        <!--quick liks ends-->
+
+        
+        <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="text-left">
+                            <p>©Copyright 2017 Autorox</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="list-inline text-right">
+                            <li><a href="#">privacy policy </a> | </li>
+                            <li><a href="#">terms and conditions </a> |</li>
+                            <li><a href="#">contact us </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    </div>
+</div>

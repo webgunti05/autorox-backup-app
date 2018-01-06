@@ -1,0 +1,104 @@
+<div class="header_wrapper">
+    <div class="header_left">
+            <span class="hamburg_menu"  (click)="toggleCollapse()">
+                    <span [hidden]="collapse=='open'" class="fa fa-bars fa-lg"></span>
+                    <span [hidden]="collapse=='closed'" class="fa fa-times fa-lg"></span>
+            </span>
+            <figure class="autorox_logo">
+                <a href="#"><img [src] = "siteName" width="100%" alt="AutoRox Logo" title="AutoRox"></a>
+            </figure>
+            <div class="clr"></div>
+    </div>
+    
+    <div class="header_right"  *ngIf="hideMenu">
+        <nav>
+            <ul>
+               
+                <li><a [routerLink]="'GetListedForFree'">Get Listed For Free</a></li>
+                <li (click)="toggleSubMenu()"><a>For Workshops <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                    <ul class="submenu">
+                        <li><a [routerLink]="'About'">About Us</a></li>
+                        <li><a [routerLink]="'Works'">Works</a></li>
+                    </ul>
+                </li>
+                <li><a [routerLink]="'QuickServices'">Quick Services</a></li>
+                <div class="clr"></div>
+            </ul>
+        </nav>
+
+        <ul class="hd_btnswrap">
+               
+                <li class="hdr_buy"> Buy Now <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></li>
+                <li class="hdr_free">Free Trail <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li class="hd_downs ">Get the App</li>
+                <li class="hdr_auths"><span class="register-btn">Register</span> /
+                    <span class="login-btn" >LogIn</span></li>
+                    <div class="clr"></div>
+            </ul>
+
+
+        <div class="clr"></div>
+
+    </div>
+
+    <!--header right2 starts-->
+    <div class="rsp_searcher" (click)="openSearchForm()"><i class="fa fa-search hdsearch_icon" aria-hidden="true"></i></div>
+    <!--repsonsive search ends-->
+
+    <div class="header_right2" *ngIf="hdrMenu2">
+
+        <div class="header_frm">
+            <form class="myform2">
+                <input type="text" name="Location" class="hdrfrm_inp" placeholder="Location Name (GL Suggest )">
+                <input type="text" name="Location" class="hdrfrm_inp"  placeholder="Workshop name / Workshop Location / Services">
+                <button type="submit"(click)="goToSearch()" class="btn btn-primary srch_btn sbtn2"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="clr"></div>
+            </form>
+        </div>
+           
+    
+            <ul class="hd_btnswrap righter_authsbtns hide_regs">
+                <li class="hdr_auths"><span class="register-btn">Register</span> /
+                <span class="login-btn" >LogIn</span></li>
+                <div class="clr"></div>
+            </ul>
+            <div class="clr"></div>
+
+    </div>
+
+    <div class="mob_frm" *ngIf="clicked">
+            <div class="header_frm">
+                <form class="myform2">
+                    <input type="text" name="Location" class="hdrfrm_inp" placeholder="Location Name (GL Suggest )">
+                    <input type="text" name="Location" class="hdrfrm_inp"  placeholder="Workshop name / Workshop Location / Services">
+                    <button type="submit" (click)="goToSearch()" class="btn btn-primary srch_btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <div class="clr"></div>
+                </form>
+            </div>
+        </div>
+
+    
+
+
+    <div class="clr"></div>
+</div>
+
+
+<!--collapse header-->
+<div class="colpseMenu collapse open" [@collapse]="collapse" >
+        <ul class="hd_btnswrap">
+               
+                <li class="hdr_buy"> Buy Now <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></li>
+                <li class="hdr_free">Free Trail <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li class="hd_downs ">Get the App</li>
+                <div class="clr"></div>
+            </ul>
+
+    <ul class="btm_menulinks">
+        <li><a [routerLink]="'GetListedForFree'">Get Listed For Free</a></li>
+        <li><a [routerLink]="'About'">About Us</a></li>
+        <li><a [routerLink]="'Works'">Works</a></li>
+        <li><a [routerLink]="'QuickServices'">Quick Services</a></li>
+        <div class="clr"></div>
+    </ul>
+</div>
